@@ -1,45 +1,271 @@
-<!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#07180d"><meta name="description" content="DAVIDUSHKA GO — доставка по Андижану">
-<title>DAVIDUSHKA GO — доставка по Андижану</title>
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06130a">
+<title>DAVIDUSHKA GO — Доставка по Андижану</title>
 <style>
-:root{--bg:#06130a;--panel:#0c2112;--g:#7cff00;--muted:#bfd0c1;--line:#285331}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f7fff8;font:16px Arial,sans-serif;line-height:1.5}
-a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
-header{position:sticky;top:0;background:#06130af2;border-bottom:1px solid var(--line);z-index:4}
-nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0;gap:16px}.brand{font-size:21px;font-weight:900}.brand span,h1 span{color:var(--g)}
-.links{display:flex;gap:22px;color:var(--muted);font-size:14px}
-.btn{display:inline-block;background:var(--g);color:#07130a;font-weight:900;padding:13px 19px;border-radius:12px}
-.btn.alt{background:transparent;border:1px solid var(--g);color:var(--g)}
-.hero{padding:72px 0;background:radial-gradient(ellipse at 75% 30%,#16451d,transparent 48%),#07180d}
-.heroGrid{display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}.tag{color:var(--g);font-size:13px;font-weight:bold;letter-spacing:2px}
-h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:15px 0;letter-spacing:-2px}.lead{font-size:19px;color:var(--muted);max-width:560px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.ticks{display:flex;gap:22px;flex-wrap:wrap;font-weight:bold}.ticks span:before{content:"✓ ";color:var(--g)}
-.visual{background:linear-gradient(145deg,#10351a,#07130a);border:1px solid #32643a;border-radius:25px;padding:28px;text-align:center}.scooter{font-size:105px}.visual strong{font-size:25px;display:block}.visual small{color:var(--muted)}
-section{padding:65px 0}.dark{background:#08170c}.heading{text-align:center;margin:0 auto 32px}.heading h2{font-size:clamp(29px,4vw,42px);margin:0 0 8px}.heading p,.card p,.step p,.partner p{color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.card,.step{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:22px}.emoji{font-size:38px}.card h3{margin:8px 0}.card p,.step p{font-size:14px;margin:0}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.num{background:var(--g);color:#07130a;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:bold}
-.partner{display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;background:linear-gradient(120deg,#0c2713,#0a1a0e);border:1px solid var(--line);border-radius:22px;padding:30px}.partner p{max-width:650px}.handshake{font-size:65px}
-.order{display:grid;grid-template-columns:1fr auto;align-items:center;gap:25px;background:var(--g);color:#07130a;border-radius:22px;padding:30px}.order h2{font-size:34px;margin:0 0 8px}.order p{margin:0}.qr{width:165px;background:white;padding:9px;border-radius:13px}.qr img{width:100%;display:block}
-footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:14px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot a{color:var(--g)}
-@media(max-width:780px){.heroGrid{grid-template-columns:1fr}.visual{max-width:440px;margin:auto}.cards{grid-template-columns:repeat(2,1fr)}.links{display:none}}
-@media(max-width:520px){.hero{padding:48px 0}.cards,.steps{grid-template-columns:1fr}.order,.partner{grid-template-columns:1fr;text-align:center}.qr{margin:auto}.scooter{font-size:82px}.order h2{font-size:28px}}
-</style></head><body>
-<header><div class="wrap"><nav><a class="brand" href="#">DAVIDUSHKA <span>GO</span></a><div class="links"><a href="#services">Доставка</a><a href="#how">Как заказать</a><a href="#partners">Партнёрам</a></div><a class="btn" href="https://t.me/davidushkaGobot" target="_blank">Заказать</a></nav></div></header>
+:root{--bg:#06130a;--panel:#0c2112;--green:#80f000;--muted:#bdcdbf}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#f7fff8;font:16px Arial,sans-serif;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:#06130af2;border-bottom:1px solid #25442c;z-index:5}
+nav{height:75px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.logo{font-size:22px;font-weight:900}
+.logo span,h1 span{color:var(--green)}
+.links{display:flex;gap:24px;color:var(--muted);font-size:14px}
+.btn{display:inline-block;background:var(--green);color:#07130a;padding:14px 20px;border-radius:12px;font-weight:900}
+.btn.outline{background:transparent;color:var(--green);border:1px solid var(--green)}
+select{background:#102719;color:white;border:1px solid #38543b;padding:10px;border-radius:9px}
+.hero{padding:80px 0;background:radial-gradient(ellipse at 80% 30%,#16451f,transparent 45%),#07180d}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.tag{color:var(--green);font-weight:bold;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:20px 0}
+.lead{font-size:19px;color:var(--muted);max-width:580px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+.checks{display:flex;gap:20px;flex-wrap:wrap;font-weight:bold}
+.checks span:before{content:"✓ ";color:var(--green)}
+.hero-card{background:linear-gradient(145deg,#12351b,#07130a);border:1px solid #37633a;border-radius:25px;padding:35px;text-align:center}
+.scooter{font-size:105px}
+.hero-card strong{font-size:25px;display:block}
+.hero-card small{color:var(--muted)}
+section{padding:70px 0}
+.heading{text-align:center;margin:0 auto 35px;max-width:680px}
+.heading h2{font-size:clamp(30px,4vw,43px);margin:8px 0}
+.heading p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.card,.step,.benefit{background:var(--panel);border:1px solid #25442c;border-radius:17px;padding:23px}
+.card .emoji{font-size:38px}
+.card p,.step p,.benefit p{color:var(--muted);font-size:14px}
+.dark{background:#08170c;border-block:1px solid #19301e}
+.benefits,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.number{width:38px;height:38px;background:var(--green);color:#07130a;border-radius:12px;display:grid;place-items:center;font-weight:bold}
+.partner{background:linear-gradient(120deg,#102b17,#09170d);border:1px solid #37633a;border-radius:23px;padding:35px}
+.partner p{color:var(--muted);max-width:650px}
+.order{background:var(--green);color:#07130a;border-radius:23px;padding:32px;display:grid;grid-template-columns:1fr auto;gap:25px;align-items:center}
+.order h2{font-size:36px;line-height:1.1;margin:0 0 10px}
+.order p{max-width:600px}
+.order .btn{background:#07130a;color:var(--green)}
+.qr{width:170px;background:white;border-radius:14px;padding:10px}
+.qr img{width:100%;display:block}
+footer{border-top:1px solid #25442c;padding:30px 0;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:var(--green)}
+@media(max-width:800px){
+.hero-grid{grid-template-columns:1fr}
+.cards{grid-template-columns:repeat(2,1fr)}
+.links{display:none}
+}
+@media(max-width:540px){
+.cards,.benefits,.steps{grid-template-columns:1fr}
+.order{grid-template-columns:1fr;text-align:center}
+.qr{margin:auto}
+.hero{padding:50px 0}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<nav>
+<a class="logo" href="#">DAVIDUSHKA <span>GO</span></a>
+<div class="links">
+<a href="#services" data-t="nav1">Услуги</a>
+<a href="#how" data-t="nav2">Как заказать</a>
+<a href="#partners" data-t="nav3">Партнёрам</a>
+</div>
+<select id="lang" aria-label="Язык">
+<option value="ru">Русский</option>
+<option value="uz">O‘zbekcha</option>
+</select>
+<a class="btn" href="https://t.me/davidushkaGobot" target="_blank" data-t="order">Заказать</a>
+</nav>
+</div>
+</header>
+
 <main>
-<div class="hero"><div class="wrap heroGrid"><div><div class="tag">СЛУЖБА ДОСТАВКИ • АНДИЖАН</div><h1>Доставим.<br><span>Быстро и удобно.</span></h1><p class="lead">Еда, цветы, подарки и покупки из магазинов — закажите доставку через Telegram.</p><div class="actions"><a class="btn" href="https://t.me/davidushkaGobot" target="_blank">🚀 Заказать доставку</a><a class="btn alt" href="#partners">Для бизнеса</a></div><div class="ticks"><span>Быстро</span><span>Надёжно</span><span>Удобно</span></div></div><div class="visual"><div class="scooter">🛵</div><strong>DAVIDUSHKA <span style="color:var(--g)">GO</span></strong><small>Твоя доставка по Андижану</small></div></div></div>
-<section id="services"><div class="wrap"><div class="heading"><h2>Что мы доставляем</h2><p>Из любимых заведений и магазинов прямо к вам.</p></div><div class="cards">
-<article class="card"><div class="emoji">🍔</div><h3>Еда и фастфуд</h3><p>Заказы из кафе и ресторанов.</p></article>
-<article class="card"><div class="emoji">💐</div><h3>Цветы и подарки</h3><p>Бережная доставка букетов и сюрпризов.</p></article>
-<article class="card"><div class="emoji">🛍️</div><h3>Покупки</h3><p>Товары из магазинов.</p></article>
-<article class="card"><div class="emoji">📦</div><h3>И многое другое</h3><p>Небольшие посылки и другие поручения по согласованию.</p></article>
-</div></div></section>
-<section class="dark" id="how"><div class="wrap"><div class="heading"><h2>Как сделать заказ</h2><p>Всего три простых шага.</p></div><div class="steps">
-<article class="step"><div class="num">1</div><h3>Откройте Telegram</h3><p>Нажмите кнопку заказа или отсканируйте QR-код.</p></article>
-<article class="step"><div class="num">2</div><h3>Укажите детали</h3><p>Напишите, откуда и куда нужно доставить заказ.</p></article>
-<article class="step"><div class="num">3</div><h3>Подтвердите заказ</h3><p>Диспетчер уточнит стоимость и согласует доставку.</p></article>
-</div></div></section>
-<section id="partners"><div class="wrap"><div class="partner"><div><div class="tag">СОТРУДНИЧЕСТВО</div><h2>Вы продаёте — мы доставляем</h2><p>Приглашаем кафе, цветочные салоны и магазины Андижана к сотрудничеству. Обсудим условия и тестовые доставки.</p><a class="btn" href="https://t.me/qaws_w" target="_blank">Стать партнёром</a></div><div class="handshake">🤝</div></div></div></section>
-<section><div class="wrap"><div class="order"><div><h2>Готовы заказать?</h2><p>Нажмите кнопку или наведите камеру на QR-код, чтобы открыть Telegram-бота.</p><p style="margin-top:18px"><a class="btn" style="background:#07130a;color:#7cff00" href="https://t.me/davidushkaGobot" target="_blank">Открыть бота</a></p></div><div class="qr"><img src="assets/order-qr.png" alt="QR-код заказа в Telegram"></div></div></div></section>
-</main><footer><div class="wrap foot"><div><b style="color:white">DAVIDUSHKA GO</b><br>Служба доставки по Андижану</div><div>Телефон: <a href="tel:+998507857650">+998 50 785 76 50</a><br>Telegram: <a href="https://t.me/qaws_w" target="_blank">@qaws_w</a></div><div>© 2026 DAVIDUSHKA GO</div></div></footer>
-</body></html>
+<div class="hero">
+<div class="wrap hero-grid">
+<div>
+<div class="tag" data-t="tag">СЛУЖБА ДОСТАВКИ • АНДИЖАН</div>
+<h1 data-t="title">Доставим.<br><span>Быстро и удобно.</span></h1>
+<p class="lead" data-t="lead">Еда, цветы, подарки и покупки из магазинов — закажите доставку через Telegram.</p>
+<div class="actions">
+<a class="btn" href="https://t.me/davidushkaGobot" target="_blank" data-t="cta">Заказать доставку</a>
+<a class="btn outline" href="#partners" data-t="business">Для бизнеса</a>
+</div>
+<div class="checks">
+<span data-t="fast">Быстро</span>
+<span data-t="safe">Надёжно</span>
+<span data-t="easy">Удобно</span>
+</div>
+</div>
+<div class="hero-card">
+<div class="scooter">🛵</div>
+<strong>DAVIDUSHKA <span style="color:#80f000">GO</span></strong>
+<small data-t="slogan">Твоя доставка по Андижану</small>
+</div>
+</div>
+</div>
+
+<section id="services">
+<div class="wrap">
+<div class="heading">
+<div class="tag" data-t="servicesTag">ЧТО МЫ ДОСТАВЛЯЕМ</div>
+<h2 data-t="servicesTitle">Нужное — прямо к вашей двери</h2>
+<p data-t="servicesDesc">Заберём заказ из любимого заведения или магазина и доставим по Андижану.</p>
+</div>
+<div class="cards">
+<div class="card"><div class="emoji">🍔</div><h3 data-t="food">Еда и фастфуд</h3><p data-t="foodDesc">Заказы из кафе и ресторанов.</p></div>
+<div class="card"><div class="emoji">💐</div><h3 data-t="flowers">Цветы и подарки</h3><p data-t="flowersDesc">Бережная доставка букетов и сюрпризов.</p></div>
+<div class="card"><div class="emoji">🛍️</div><h3 data-t="shops">Покупки из магазинов</h3><p data-t="shopsDesc">Заберём товары и привезём вам.</p></div>
+<div class="card"><div class="emoji">📦</div><h3 data-t="other">Другие поручения</h3><p data-t="otherDesc">Небольшие посылки по согласованию.</p></div>
+</div>
+</div>
+</section>
+
+<section class="dark">
+<div class="wrap">
+<div class="heading">
+<div class="tag" data-t="whyTag">ПОЧЕМУ DAVIDUSHKA GO</div>
+<h2 data-t="whyTitle">Доставка с человеческим отношением</h2>
+<p data-t="whyDesc">Понятная связь с диспетчером и внимание к каждому заказу.</p>
+</div>
+<div class="benefits">
+<div class="benefit"><h3 data-t="b1">⚡ Оперативно</h3><p data-t="b1d">Согласуем заказ и организуем доставку, когда курьер доступен.</p></div>
+<div class="benefit"><h3 data-t="b2">💚 Бережно</h3><p data-t="b2d">Учитываем особенности заказа — букет, еда или подарок.</p></div>
+<div class="benefit"><h3 data-t="b3">💬 На связи</h3><p data-t="b3d">Можно уточнить детали у диспетчера через Telegram.</p></div>
+</div>
+</div>
+</section>
+
+<section id="how">
+<div class="wrap">
+<div class="heading">
+<div class="tag" data-t="howTag">ПРОСТО НАЧАТЬ</div>
+<h2 data-t="howTitle">Как сделать заказ</h2>
+<p data-t="howDesc">Оформление заказа занимает всего несколько шагов.</p>
+</div>
+<div class="steps">
+<div class="step"><div class="number">01</div><h3 data-t="s1">Откройте Telegram</h3><p data-t="s1d">Нажмите кнопку заказа или отсканируйте QR-код.</p></div>
+<div class="step"><div class="number">02</div><h3 data-t="s2">Укажите детали</h3><p data-t="s2d">Напишите адрес отправления, доставки и информацию о заказе.</p></div>
+<div class="step"><div class="number">03</div><h3 data-t="s3">Подтвердите доставку</h3><p data-t="s3d">Диспетчер уточнит стоимость и согласует заказ с вами.</p></div>
+</div>
+</div>
+</section>
+
+<section id="partners">
+<div class="wrap">
+<div class="partner">
+<div class="tag" data-t="partnerTag">ДЛЯ БИЗНЕСА</div>
+<h2 data-t="partnerTitle">Вы продаёте — мы доставляем</h2>
+<p data-t="partnerDesc">Приглашаем кафе, цветочные салоны и магазины Андижана к сотрудничеству. Обсудим удобный процесс и первые тестовые доставки.</p>
+<a class="btn" href="https://t.me/qaws_w" target="_blank" data-t="partnerBtn">Стать партнёром</a>
+</div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+<div class="order">
+<div>
+<h2 data-t="orderTitle">Готовы заказать?</h2>
+<p data-t="orderDesc">Откройте Telegram-бота или отсканируйте QR-код камерой телефона.</p>
+<a class="btn" href="https://t.me/davidushkaGobot" target="_blank" data-t="openBot">Открыть Telegram-бота</a>
+</div>
+<div class="qr">
+<img src="assets/order-qr.svg" alt="QR-код для заказа через Telegram">
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap foot">
+<div><strong style="color:white">DAVIDUSHKA GO</strong><br><span data-t="footerTag">Служба доставки по Андижану</span></div>
+<div><span data-t="contact">Связаться с нами</span><br><a href="tel:+998507857650">+998 50 785 76 50</a><br><a href="https://t.me/qaws_w" target="_blank">@qaws_w</a></div>
+<div><span data-t="telegram">Заказ через Telegram</span><br><a href="https://t.me/davidushkaGobot" target="_blank">@davidushkaGobot</a></div>
+</div>
+</footer>
+
+<script>
+const words={
+ru:{
+nav1:"Услуги",nav2:"Как заказать",nav3:"Партнёрам",order:"Заказать",
+tag:"СЛУЖБА ДОСТАВКИ • АНДИЖАН",title:"Доставим.<br><span>Быстро и удобно.</span>",
+lead:"Еда, цветы, подарки и покупки из магазинов — закажите доставку через Telegram.",
+cta:"Заказать доставку",business:"Для бизнеса",fast:"Быстро",safe:"Надёжно",easy:"Удобно",
+slogan:"Твоя доставка по Андижану",servicesTag:"ЧТО МЫ ДОСТАВЛЯЕМ",
+servicesTitle:"Нужное — прямо к вашей двери",
+servicesDesc:"Заберём заказ из любимого заведения или магазина и доставим по Андижану.",
+food:"Еда и фастфуд",foodDesc:"Заказы из кафе и ресторанов.",
+flowers:"Цветы и подарки",flowersDesc:"Бережная доставка букетов и сюрпризов.",
+shops:"Покупки из магазинов",shopsDesc:"Заберём товары и привезём вам.",
+other:"Другие поручения",otherDesc:"Небольшие посылки по согласованию.",
+whyTag:"ПОЧЕМУ DAVIDUSHKA GO",whyTitle:"Доставка с человеческим отношением",
+whyDesc:"Понятная связь с диспетчером и внимание к каждому заказу.",
+b1:"⚡ Оперативно",b1d:"Согласуем заказ и организуем доставку, когда курьер доступен.",
+b2:"💚 Бережно",b2d:"Учитываем особенности заказа — букет, еда или подарок.",
+b3:"💬 На связи",b3d:"Можно уточнить детали у диспетчера через Telegram.",
+howTag:"ПРОСТО НАЧАТЬ",howTitle:"Как сделать заказ",
+howDesc:"Оформление заказа занимает всего несколько шагов.",
+s1:"Откройте Telegram",s1d:"Нажмите кнопку заказа или отсканируйте QR-код.",
+s2:"Укажите детали",s2d:"Напишите адрес отправления, доставки и информацию о заказе.",
+s3:"Подтвердите доставку",s3d:"Диспетчер уточнит стоимость и согласует заказ с вами.",
+partnerTag:"ДЛЯ БИЗНЕСА",partnerTitle:"Вы продаёте — мы доставляем",
+partnerDesc:"Приглашаем кафе, цветочные салоны и магазины Андижана к сотрудничеству. Обсудим удобный процесс и первые тестовые доставки.",
+partnerBtn:"Стать партнёром",orderTitle:"Готовы заказать?",
+orderDesc:"Откройте Telegram-бота или отсканируйте QR-код камерой телефона.",
+openBot:"Открыть Telegram-бота",footerTag:"Служба доставки по Андижану",
+contact:"Связаться с нами",telegram:"Заказ через Telegram"
+},
+uz:{
+nav1:"Xizmatlar",nav2:"Qanday buyurtma berish",nav3:"Hamkorlar uchun",order:"Buyurtma",
+tag:"YETKAZIB BERISH XIZMATI • ANDIJON",title:"Yetkazamiz.<br><span>Tez va qulay.</span>",
+lead:"Taomlar, gullar, sovg‘alar va do‘kon xaridlarini Telegram orqali buyurtma qiling.",
+cta:"Yetkazib berishga buyurtma",business:"Biznes uchun",fast:"Tez",safe:"Ishonchli",easy:"Qulay",
+slogan:"Andijon bo‘ylab yetkazib berish",servicesTag:"NIMALARNI YETKAZAMIZ",
+servicesTitle:"Kerakli narsalar eshigingizgacha",
+servicesDesc:"Buyurtmangizni kafe yoki do‘kondan olib, Andijon bo‘ylab yetkazamiz.",
+food:"Taom va fastfud",foodDesc:"Kafe va restoranlardan buyurtmalar.",
+flowers:"Gullar va sovg‘alar",flowersDesc:"Guldasta va sovg‘alarni ehtiyotkorlik bilan yetkazamiz.",
+shops:"Do‘kon xaridlari",shopsDesc:"Tanlangan mahsulotlarni olib kelamiz.",
+other:"Boshqa topshiriqlar",otherDesc:"Kelishuv asosida kichik posilkalar.",
+whyTag:"NEGA DAVIDUSHKA GO",whyTitle:"E’tibor bilan yetkazib berish",
+whyDesc:"Dispetcher bilan oson aloqa va har bir buyurtmaga e’tibor.",
+b1:"⚡ Tezkor",b1d:"Buyurtmani kelishib olamiz va kuryer mavjud bo‘lganda yetkazamiz.",
+b2:"💚 Ehtiyotkor",b2d:"Gul, taom yoki sovg‘a — buyurtma xususiyatini hisobga olamiz.",
+b3:"💬 Aloqadamiz",b3d:"Tafsilotlarni Telegram orqali dispetcherdan so‘rashingiz mumkin.",
+howTag:"BOSHLASH OSON",howTitle:"Qanday buyurtma berish mumkin",
+howDesc:"Buyurtma berish bir necha oddiy bosqichdan iborat.",
+s1:"Telegramni oching",s1d:"Buyurtma tugmasini bosing yoki QR-kodni skaner qiling.",
+s2:"Ma’lumotlarni kiriting",s2d:"Olib ketish va yetkazish manzili hamda buyurtma haqida yozing.",
+s3:"Yetkazishni tasdiqlang",s3d:"Dispetcher narxni aniqlashtirib, buyurtmani siz bilan kelishadi.",
+partnerTag:"BIZNES UCHUN",partnerTitle:"Siz sotasiz — biz yetkazamiz",
+partnerDesc:"Andijondagi kafe, gul do‘konlari va savdo nuqtalarini hamkorlikka taklif qilamiz. Qulay jarayon va sinov yetkazib berishlarini kelishib olamiz.",
+partnerBtn:"Hamkor bo‘lish",orderTitle:"Buyurtma berishga tayyormisiz?",
+orderDesc:"Telegram-botni oching yoki telefon kamerasi orqali QR-kodni skaner qiling.",
+openBot:"Telegram-botni ochish",footerTag:"Andijon bo‘ylab yetkazib berish xizmati",
+contact:"Biz bilan bog‘laning",telegram:"Telegram orqali buyurtma"
+}
+};
+function setLang(lang){
+document.documentElement.lang=lang;
+document.querySelectorAll("[data-t]").forEach(el=>{
+const key=el.dataset.t;
+if(words[lang][key])el.innerHTML=words[lang][key];
+});
+try{localStorage.setItem("davidushka-lang",lang)}catch(e){}
+}
+const selector=document.getElementById("lang");
+let saved="ru";
+try{saved=localStorage.getItem("davidushka-lang")||"ru"}catch(e){}
+selector.value=saved;setLang(saved);
+selector.addEventListener("change",()=>setLang(selector.value));
+</script>
+</body>
+</html>
